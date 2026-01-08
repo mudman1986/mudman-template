@@ -1,0 +1,22 @@
+name: CodeQL Security Analysis
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+  schedule:
+    # Run every Monday at 00:00 UTC
+    - cron: '0 0 * * 1'
+
+jobs:
+  analyze:
+    name: CodeQL Analysis
+    uses: mudman1986/mudman-reusable/.github/workflows/reusable-codeql-analysis.yml@main
+    with:
+      languages: '["javascript", "python"]'
+      queries: security-and-quality
