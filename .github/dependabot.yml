@@ -5,6 +5,12 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
+    groups:
+      npm-dependencies:
+        patterns:
+          - "*"
     open-pull-requests-limit: 10
     reviewers:
       - "mudman1986"
@@ -17,6 +23,12 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
+    groups:
+      pip:
+        patterns:
+          - "*"
     open-pull-requests-limit: 10
     reviewers:
       - "mudman1986"
@@ -29,6 +41,12 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
+    groups:
+      github-actions:
+        patterns:
+          - "*"
     open-pull-requests-limit: 10
     reviewers:
       - "mudman1986"
@@ -42,6 +60,12 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
+    groups:
+      docker:
+        patterns:
+          - "*"
     open-pull-requests-limit: 10
     reviewers:
       - "mudman1986"
