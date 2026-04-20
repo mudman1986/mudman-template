@@ -10,6 +10,10 @@ on:
       - main
       - develop
 
+permissions:
+  contents: write
+  statuses: write
+
 jobs:
   lint:
     name: Lint Code Base
